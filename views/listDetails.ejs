@@ -1,0 +1,41 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="skew">
+  <div class="content">
+    <a class="back" href="/">
+      <button type="submit" name="list" value="">
+        <i class="fa-solid fa-left-long"></i>
+      </button>
+    </a>
+    <div class="date">
+      <h1><%= listDet.name %></h1>
+    </div>
+
+    <div class="box">
+      <% for(let item of listItems) { %>
+      <form action="/listDetails/delete" method="POST">
+        <div class="item-box">
+          <input
+            type="checkbox"
+            name="item"
+            value="<%= item.listId %>"
+            onchange="this.form.submit()"
+          />
+          <p><%= item.name %></p>
+        </div>
+      </form>
+      <% } %>
+
+      <form class="item" action="/listDetails/<%= listDet._id %>" method="post">
+        <input
+          type="text"
+          name="newItem"
+          placeholder="New Item"
+          autocomplete="off"
+        />
+        <button type="submit" name="list" value="">+</button>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs'); -%>

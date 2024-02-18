@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="skew">
+  <div class="content">
+    <div class="l-head">
+      <h1>LISTS</h1>
+    </div>
+    <div id="container">
+      <div class="row">
+        <% for(let list of myList) { %>
+        <div class="row-list">
+          <form
+            class="list-form"
+            action="/listDetails/<%= list._id %>"
+            method="get"
+          >
+            <button type="submit"><%= list.name %></button>
+          </form>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <a class="item" href="/add">
+      <button type="submit" name="list" value="">+</button>
+    </a>
+  </div>
+</div>
+<%- include('partials/footer.ejs'); -%>

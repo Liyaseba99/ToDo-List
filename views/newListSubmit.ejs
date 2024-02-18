@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="skew">
+  <div class="content">
+    <a class="back" href="/">
+      <button type="submit" name="list" value="">
+        <i class="fa-solid fa-left-long"></i>
+      </button>
+    </a>
+
+    <div class="box">
+      <form class="item" action="/add" method="post">
+        <input
+          type="text"
+          name="newList"
+          placeholder="Name of List"
+          autocomplete="off"
+        />
+        <button type="submit" name="list" value="">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs'); -%>

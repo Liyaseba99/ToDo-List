@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(169, 130, 226, 255);
+}
+.skew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -180px;
+  padding: 235px 0;
+  /* margin-bottom: 5px; */
+  transform: skew(0deg, 13deg);
+  background: rgba(217, 205, 228, 255);
+
+  overflow-y: hidden;
+}
+.content {
+  /* margin-top: 20px; */
+  /* border: 2px solid red; */
+  transform: skew(0deg, -13deg);
+  padding-top: 20px;
+  width: 100%;
+  /* width: fit-content; */
+  position: relative;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* border: 2px solid black; */
+  transform: translateY(200px);
+}
+footer i {
+  color: black;
+  font-size: 13px;
+  padding: 0 5px;
+  padding-bottom: 2px;
+}
+
+.l-head {
+  /* border: 2px solid red; */
+  padding: 5px 15px;
+  background-color: rgba(169, 131, 223, 255);
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  /* top: 25%; */
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  width: 100%;
+  transform: translateY(100px);
+}
+.row {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  width: 1500px;
+  justify-content: center;
+  align-items: center;
+}
+.row p {
+  color: black;
+}
+.row-list {
+  height: 100px;
+  width: 200px;
+  background: white;
+  margin: 40px;
+  border-radius: 5px;
+  flex-basis: 20%;
+}
+.row-list button {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 3px 3px gray;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(169, 131, 223, 255);
+}
+
+#container p {
+  /* transform: translate(50%, -50%); */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: rgba(169, 131, 223, 255);
+  font-weight: 600;
+}
+.item {
+  position: relative;
+  /* border: 2px solid red; */
+}
+.item {
+  /* border: 2px solid pink; */
+
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: rgba(169, 131, 223, 255);
+  position: absolute;
+  right: 13px;
+  bottom: -315px;
+}
+.item button {
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  font-size: 35px;
+  color: white;
+  border: none;
+  background-color: rgba(169, 131, 223, 255);
+}
+a:hover {
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}

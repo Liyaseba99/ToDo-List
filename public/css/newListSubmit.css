@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(169, 130, 226, 255);
+}
+
+.skew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -180px;
+  padding: 200px 0;
+  transform: skew(0deg, 13deg);
+  background: rgba(217, 205, 228, 255);
+  overflow-y: hidden;
+}
+.content {
+  /* margin-top: 20px; */
+  /* border: 2px solid red; */
+  transform: skew(0deg, -13deg);
+  padding-top: 20px;
+
+  width: fit-content;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* border: 2px solid black; */
+  transform: translateY(250px);
+}
+footer i {
+  color: black;
+  font-size: 13px;
+  padding: 0 5px;
+  padding-bottom: 2px;
+}
+
+.back {
+  position: relative;
+  /* border: 2px solid red; */
+}
+.back button {
+  position: absolute;
+  transform: translateX(-550px);
+  top: -20px;
+}
+.back button {
+  /* border: none; */
+
+  font-size: 30px;
+  background-color: rgba(217, 205, 228, 255);
+  border-radius: 30%;
+  padding: 5px;
+  border: 5px solid rgba(169, 130, 226, 255);
+}
+.back i {
+  color: rgba(169, 130, 226, 255);
+}
+
+.box {
+  /* border: 2px solid orange; */
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(128, 128, 128, 0.484);
+}
+
+.item {
+  /* padding: 15px 0px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid brown; */
+  padding-bottom: 5px;
+  padding-left: 5px;
+  width: 100%;
+}
+.item input {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  border: none;
+  margin-top: 25px;
+}
+input::placeholder {
+  color: rgba(128, 128, 128, 0.411);
+  border: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgba(169, 131, 223, 255);
+}
+
+.item button {
+  /* border: 2px solid pink; */
+  border: none;
+  width: 95%;
+  font-size: 20px;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 30px;
+  color: white;
+  background-color: rgba(169, 131, 223, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(128, 128, 128, 0.484);
+}
+i:hover {
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}
